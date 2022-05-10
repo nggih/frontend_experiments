@@ -21,7 +21,7 @@ function Todo(props: TileCard) {
     <div className="card">
       <h2>{props.text}</h2>
       <div className="actions">
-        <button className="btn" onClick={deleteHandler}>delete</button>
+        <button className="" onClick={deleteHandler}>delete</button>
       </div>
         { modalIsOpen && <Modal />}
         { modalIsOpen && <Backdrop onCancel={closeModalHandler} />}
