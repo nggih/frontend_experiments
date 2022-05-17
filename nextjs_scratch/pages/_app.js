@@ -1,19 +1,12 @@
-import '../styles/globals.css'
+import Layout from "../components/layout/layout";
+import "../styles/globals.css";
 
-// function App({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
-function App(params) {
-  return <div> 
-    <h1>My Todos</h1>
-    <div>
-      <h2>
-        Title
-      </h2>
-      <button>Delete</button>
-    </div>
-  </div>
-  
+function App({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default App
+export default App;
